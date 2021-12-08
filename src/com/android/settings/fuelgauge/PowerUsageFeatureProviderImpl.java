@@ -33,9 +33,7 @@ import com.android.internal.util.ArrayUtils;
 import com.android.settingslib.fuelgauge.Estimate;
 
 import com.android.settings.R;
-
 import com.android.settingslib.utils.PowerUtil;
-
 import java.time.Duration;
 
 import java.util.ArrayList;
@@ -318,6 +316,11 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
     @Override
     public boolean isChartGraphSlotsEnabled(Context context) {
         return false;
+    }
+
+    @Override
+    public Intent getResumeChargeIntent() {
+        return null;
     }
 
     @Override
